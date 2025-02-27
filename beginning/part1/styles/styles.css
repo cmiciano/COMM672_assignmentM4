@@ -5,7 +5,7 @@ h1 {
 body {
   font-family: Arial;
   font-family: sans-serif;
-  font-size: 1em; /* point 2, how can i check this works , just change from 1 to 2 */
+  font-size: 1em;
   line-height: 2em;
   background-color: #ededed;
 }

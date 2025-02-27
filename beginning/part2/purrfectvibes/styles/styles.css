@@ -10,13 +10,16 @@ body {
 img {
   max-width: 100%;
 }
-/* Modifying the navigation menu but not features ul */
+/* Modifying the navigation menu but not the bullets in the 
+   features ul */
 nav > ul {
   list-style-type: none;
   margin-left: -40px;
-  /* When you begin to build out the Features page however,
-   note that the bullets are missing from the navigation menu but remain in the lists 
-   within each feature's description.  */
+}
+
+/* remove bullet points from features nav bar as well */
+nav > ul > li > ul {
+  list-style-type: none;
 }
 
 /* active for links */
@@ -52,6 +55,7 @@ td {
 /* the first td in that row where the parent is an odd numbered row */
 tr:nth-child(odd) > td:nth-child(1) {
   background-color: #f2f2f2;
+  text-align: center; /* center the photo */
 }
 
 .feature-title {
@@ -65,14 +69,16 @@ tr:nth-child(odd) > td:nth-child(1) {
   padding: 10px;
   margin: 20px;
 }
-/* this only selects paragraph tags that are the first child of feature-container 
+/* this only selects paragraph tags that are
+   the first child of feature-container 
  (centers the heading which is the first paragraph tag) */
 .feature-container p:first-child {
   font-size: 20px;
   text-align: center;
 }
 
-/* this only selects paragraph tags that are the last child of feature-container 
+/* this only selects paragraph tags that are
+   the last child of feature-container 
 (which is the back to top) paragraph */
 .feature-container p:last-child {
   font-weight: bold;
