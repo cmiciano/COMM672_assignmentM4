@@ -1,0 +1,53 @@
+h1 {
+  color: red;
+}
+
+body {
+  font-family: Arial;
+  font-family: sans-serif;
+  font-size: 1em; /* point 2, how can i check this works , just change from 1 to 2 */
+  line-height: 2em;
+  background-color: #ededed;
+}
+
+h2 {
+  color: blue;
+  border-bottom: 1px solid #929ca4;
+}
+
+p::first-letter {
+  font-size: 30px;
+}
+
+.features {
+  color: #cc1c0d;
+  font-weight: bold;
+}
+
+#testimonial1,
+#testimonial2 {
+  font-style: italic;
+  margin-left: 50px;
+}
+
+a:hover {
+  color: fuchsia;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+a:link {
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:first-child {
+  color: blue;
+}
+
+li:last-child {
+  color: red;
+}
